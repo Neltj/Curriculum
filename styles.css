@@ -9,20 +9,21 @@
 
 body {
     /* background-color: lightblue; */
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100vh; */
     font-family: 'Josefin Sans', sans-serif;
+    background-color: none;
 }
 
 .container {
     position: relative;
     width: 100%;
-    max-width: 1000px;
-    min-height: 1000px;
+    width: 1000px;
+    height: 100%;
     border: 1px solid;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     display: grid;
     grid-template-columns: 1fr 2fr;
     

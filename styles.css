@@ -24,7 +24,7 @@ body {
 .container {
     position: relative;
     width: 100%;
-    max-width: 1090px;
+    max-width: 1500px;
     border: 1px solid;
     display: grid;
     align-items: center;

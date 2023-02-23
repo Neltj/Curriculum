@@ -1,55 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&display=swap');
 
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+:root {
+    --white : #fff;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Rubik', sans-serif;
+
+}
 body {
-    /* background-color: lightblue; */
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; */
-    font-family: 'Josefin Sans', sans-serif;
-    background-color: none;
+    display: grid;
+    /* place-content: center; */
+    /* height: 100vh; */
+    font-size: 1.6rem; 
 }
 
 .container {
     position: relative;
     width: 100%;
-    width: 1000px;
-    height: 100%;
+    max-width: 1090px;
     border: 1px solid;
-    /* margin: 0 auto; */
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 2fr;
-    
-
 }
 
-.container .foto-bg {
+.container .backgro {
+    background-image: url("./img/nerotop.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    position: absolute;
 }
 
 
 .container__info {
-    color: #fff;
+    color: rgb(30, 5, 5);
 }
 
-.left__side {
+.left__side, .right__side {
     position: relative;
-    padding: 40px;
-}
-
-.right__side {
-    position: relative;
-    padding: 40px;
+    padding: 30px 50px;
 }
 
 .img__me{
@@ -59,7 +58,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
+
 }
 
 .profile__text {
@@ -71,41 +70,43 @@ body {
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-.cnt__img {
+.container__img {
     position: relative;
     width: 200px;
     height: 200px;
+    border: 6px inset #f1e4ad;
     border-radius: 50%;
     overflow: hidden;
 }
 
 .name {
     color: #fff;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
-    line-height: 1.3em;
+    line-height: 2.8rem;
     margin-top: 20px;
 }
 
 .name span {
-    font-size: .8em;
+    font-size: 1.8rem;
     font-weight: 300;
-
+    color: rgb(236, 224, 158);
 }
 
-.title {
-    color: #fff;
-    margin: 20px 0 26px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 1px;
+.left__side .title {
+    color: #f0e2bb;
+    letter-spacing: 2px;
 }
 
 .container__info li{
     list-style: none;
-    line-height: 1.5;
+    line-height: 2.6rem;
+}
+
+.container__info-education .education .info {
+    margin-bottom: 30px;
 }
 
 .info span:nth-child(2) {
@@ -116,37 +117,39 @@ body {
 
 .icon {
     display: inline-block;
-    font-size: 18px;
+    font-size: 1.8rem;
     width: 30px;
-    color: #03a9f4;
+    color: rgb(236, 224, 158);
 }
+
+.education .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.education .info p:nth-child(1){
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+.education .info p {
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.info p {
+    color: var(--white);
+}
+
 
 .level__languages {
     width: 250px;
     height: 10px;
-    background-color: #03a9f4;
-    border: 1px solid initial;
-    border-radius: 3px;
-    margin: 10px 0;
-    
-}
-
-.education .info h5{
-    margin-top: 20px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    border-bottom: 1px solid #03a9f4;
-}
-
-.education .info h4 {
-    color:#03a9f4;
-    font-size: 15px;
-    /* text-shadow: 5px 9px 3px navy; */
-    letter-spacing: 1.5px;
-}
-
-.fa-ship, .fa-coffee, .fa-html5, .fa-css3 {
-    float: right;
+    background-color: #fdf4be;
+    border: 1px solid;
+    border-radius: 2px;
+    margin: 15px 0;
 }
 
 .fa-coffee {
@@ -165,7 +168,6 @@ body {
     color: blue;
 }
 
-
 .ita__level--size {
     box-shadow: 20px 0px 3px #000;
 }
@@ -180,52 +182,54 @@ body {
     box-shadow: 120px 0px 3px #000;
 }
 
-.profile-title, .skills__title, .exp-title, .interest__title{
-    color: #fff;
-    font-weight: 600;
-    margin-bottom: 20px;
+.left__side .title {
+    margin: 26px 0 20px;
+}
+
+.container__info-languages p {
+    color: white;
+}
+
+
+.right__side .title{
+    font-weight: 500;
     text-transform: uppercase;
     padding-left: 20px;
+    margin: 50px 0 30px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 0px 1px #0a0909, 0px 1px 1px #EEEEEE, 2px 1px 1px #EEEEEE, 1px 2px 1px #EEEEEE;
+    letter-spacing: .2rem;
 }
 
 
 .profile__paragraph {
     color: #fff;
     line-height: 1.5;
-}
-
-.data__experience {
-    width: 200px;
-    height: 100px;
-    background-color: red;
-    list-style: none;
-    float: left;
+    font-size: 1.8rem;
 }
 
 .content__exp {
     display: flex;
-    flex-direction: row;
-    margin: 30px 0;
     color: #fff;
+    margin: 20px 0;
+    line-height: 1.8rem;
+}
+
+.data__exp h5:nth-child(2) {
+    text-align: center;
 }
 
 .data__exp h5 {
     width: 170px;
 }
 
-
-.skills__title{
-    margin-bottom: 36px;
-}
 .skills .box {
     position: relative;
     width: 100%;
     display: grid;
-    grid-template-columns: 170px 1fr;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;    
-
+    grid-template-columns: 130px 1fr;
+    margin-bottom: 19px;    
 }
 
 .skills .box h4 {
@@ -240,7 +244,6 @@ body {
     height: 10px;
     background-color: #fff;
     border-radius: 2px;
-    overflow: hidden;
 }
 
 .skills .box .percent .lvl__percent {
@@ -248,8 +251,13 @@ body {
     top: 0;
     left: 0;
     height: 100%;
-    background-image: linear-gradient(10deg, rgba(2,0,36,1) 0%, rgba(1,69,104,1) 50%, rgba(0,16,70,1) 59%);;   
+    /* background-image: linear-gradient(10deg, rgba(2,0,36,1) 0%, rgba(1,69,104,1) 50%, rgba(0,16,70,1) 59%);    */
+    background: rgb(85,85,78);
+background: linear-gradient(90deg, rgba(85,85,78,1) 3%, rgba(196,200,131,1) 48%);
+}
 
+.skills div:last-child {
+    margin-bottom: 0;
 }
 
 .html--lvl {
@@ -264,27 +272,22 @@ body {
     width: 20%;
 }
 
-.illustrator--lvl {
+.react--lvl {
     width: 0;
 }
 
-.phshop--lvl {
+.github--lvl {
     width: 50%;
 }
 
-.adobe--lvl {
+.mysql--lvl {
     width: 30%;
-}
-
-.interest {
-    margin-top: 50px;
 }
 
 .interest__icons {
     display: flex;
-    font-size: 20px;
-    color: #03a9f4;
+    font-size: 2rem;
+    color: #fdf4be;
     align-items: center;
     justify-content: space-between;
-    margin-top: 30px;
 }

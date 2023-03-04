@@ -12,6 +12,7 @@ html {
 body {
     background-color: azure;
     font-size: 1.8rem;
+    height: 100vh;
 
 }
 
@@ -28,7 +29,7 @@ body {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-image: url(/img/logocv.jpg);
+    background-image: url(../img/logocv.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,7 +41,7 @@ body {
 
 .container .foto-profile {
     position: relative;
-    background-image: url(/img/mammafototiny.jpg);
+    background-image: url(../img/mammafototiny.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,7 +55,7 @@ body {
     position: absolute;
     top: 0;
     right: -30px;
-    background-image: url(/img/European\ Union\ Flag_6.jpg);
+    background-image: url(../img/European\ Union\ Flag_6.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

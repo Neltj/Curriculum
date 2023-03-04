@@ -29,7 +29,7 @@ body {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-image: url(../img/logocv.jpg);
+    background-image: url(logocv.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,7 +41,7 @@ body {
 
 .container .foto-profile {
     position: relative;
-    background-image: url(../img/mammafototiny.jpg);
+    background-image: url(mammafototiny.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,7 +55,7 @@ body {
     position: absolute;
     top: 0;
     right: -30px;
-    background-image: url(../img/European\ Union\ Flag_6.jpg);
+    background-image: url(UnionFlag.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

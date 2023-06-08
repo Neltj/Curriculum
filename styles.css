@@ -16,7 +16,10 @@ html {
 }
 body {
     display: grid;
-    font-size: 1.6rem; 
+    font-size: 1.6rem;
+    place-items: center;
+    min-height: 100vh;
+
 }
 
 .container {
